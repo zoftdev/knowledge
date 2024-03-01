@@ -16,6 +16,10 @@ def fix_indent():
                 prev_indent=""
                 in_block=False
                 for line_num, line in enumerate(lines):    
+
+                    # search for "(/assets" and replace with "(/knowledge/assets"
+                    line = re.sub(r"\(/assets", r"(/knowledge/assets", line)
+
                     if in_block:
                         if len(prev_indent) > 0:                                                         
                             modified_lines.append(prev_indent + line )
