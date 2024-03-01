@@ -5,7 +5,7 @@ categories:
 date: 2024-02-18
 lastMod: 2024-03-01
 ---
-## Zabbix Learning Map ![image.png](/knowledge/assets/image_1709276775562_0.png) 🗺️ #Learning/Zabbix
+## Zabbix Learning Map ![image.png](/knowledge/assets/image_1709276775562_0.png) 🗺️ #Learning/Zabbix11
 
   + ### key
 
