@@ -1,27 +1,36 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><script src="/knowledge/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=knowledge/livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>Hlex</title>
+<title>zabbix-session2 | Hlex</title>
 <meta name="keywords" content="" />
-<meta name="description" content=" - Hlex">
+<meta name="description" content="Create trigger &amp; alert #Learning/zabbix use items and function to create problem trigger.
+how to config smtp.
+doc trigger
+alert macro
+Zabbix Items #Learning/zabbix summary Host อาจมีทั้ง template และ items เดี่ยวๆ ผสมกัน list of linux keys linux items keys
+create item screen
+in case create active agent item behind proxy, need to:
+reload cache on proxy
+reload config zabbix_proxy -R config_cache_reload restart agent to retrive new item keys.
+Zabbix-Agent #Learning/Zabbix step install os">
 <meta name="author" content="Hlex">
-<link rel="canonical" href="http://localhost:1313/pages/feb-23rd-2024/" />
-<link crossorigin="anonymous" href="/assets/css/stylesheet.min.49b1c3611e5e823e974d0b9b3e1101617fce26c004757161abb1a1e4af3ff85c.css" integrity="sha256-SbHDYR5egj6XTQubPhEBYX/OJsAEdXFhq7Gh5K8/&#43;Fw=" rel="preload stylesheet" as="style">
-<script defer crossorigin="anonymous" src="/assets/js/highlight.min.30d2332871da51f600f574811c17751e6c862577d450b624f86e2bc8a6e31221.js" integrity="sha256-MNIzKHHaUfYA9XSBHBd1HmyGJXfUULYk&#43;G4ryKbjEiE="
+<link rel="canonical" href="http://localhost:1313/knowledge/pages/zabbix-session2/" />
+<link crossorigin="anonymous" href="/knowledge/assets/css/stylesheet.min.49b1c3611e5e823e974d0b9b3e1101617fce26c004757161abb1a1e4af3ff85c.css" integrity="sha256-SbHDYR5egj6XTQubPhEBYX/OJsAEdXFhq7Gh5K8/&#43;Fw=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/knowledge/assets/js/highlight.min.30d2332871da51f600f574811c17751e6c862577d450b624f86e2bc8a6e31221.js" integrity="sha256-MNIzKHHaUfYA9XSBHBd1HmyGJXfUULYk&#43;G4ryKbjEiE="
     onload="hljs.initHighlightingOnLoad();"></script>
-<link rel="icon" href="http://localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<link rel="icon" href="http://localhost:1313/knowledge/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/knowledge/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/knowledge/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/knowledge/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/knowledge/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<meta name="generator" content="Hugo 0.123.6">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/pages/feb-23rd-2024/" />
+<meta name="generator" content="Hugo 0.123.7">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/knowledge/pages/zabbix-session2/" />
 <noscript>
     <style>
         #theme-toggle,
@@ -87,7 +96,7 @@ gtag('js', new Date());
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="Hlex (Alt + H)">Hlex</a>
+            <a href="http://localhost:1313/knowledge/" accesskey="h" title="Hlex (Alt + H)">Hlex</a>
             <span class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -115,22 +124,22 @@ gtag('js', new Date());
         </div>
         <ul id="menu">
             <li>
-                <a href="http://localhost:1313/categories/" title="Categories">
+                <a href="http://localhost:1313/knowledge/categories/" title="Categories">
                     <span>Categories</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/archives/" title="Archive">
+                <a href="http://localhost:1313/knowledge/archives/" title="Archive">
                     <span>Archive</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/search/" title="Search (Alt &#43; /)" accesskey=/>
+                <a href="http://localhost:1313/knowledge/search/" title="Search">
                     <span>Search</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/tags/" title="Tags">
+                <a href="http://localhost:1313/knowledge/tags/" title="Tags">
                     <span>Tags</span>
                 </a>
             </li>
@@ -144,12 +153,110 @@ gtag('js', new Date());
     
     
     <h1 class="post-title">
-      
+      zabbix-session2
     </h1>
-    <div class="post-meta">0 min&amp;nbsp;·&amp;nbsp;Hlex
+    <div class="post-meta">&lt;span title=&#39;2024-03-03 00:00:00 &#43;0000 UTC&#39;&gt;March 3, 2024&lt;/span&gt;&amp;nbsp;·&amp;nbsp;1 min&amp;nbsp;·&amp;nbsp;Hlex
 
 </div>
   </header> 
+  <div class="post-content"><h2 id="create-trigger--alert-learningzabbix">Create trigger &amp; alert #Learning/zabbix<a hidden class="anchor" aria-hidden="true" href="#create-trigger--alert-learningzabbix">#</a></h2>
+<ul>
+<li>
+<p>use items and function to create problem trigger.</p>
+</li>
+<li>
+<p>how to config smtp.</p>
+<p><img loading="lazy" src="/knowledge/assets/image_1707776714370_0.png" alt="image.png"  />
+</p>
+</li>
+<li>
+<p><a href="https://www.zabbix.com/documentation/current/en/manual/config/triggers/trigger">doc trigger</a></p>
+</li>
+<li>
+<p>alert  <a href="https://www.zabbix.com/documentation/current/en/manual/appendix/macros/supported_by_location">macro</a></p>
+</li>
+</ul>
+<h2 id="zabbix-items-learningzabbix">Zabbix Items #Learning/zabbix<a hidden class="anchor" aria-hidden="true" href="#zabbix-items-learningzabbix">#</a></h2>
+<ul>
+<li>
+<h3 id="summary">summary<a hidden class="anchor" aria-hidden="true" href="#summary">#</a></h3>
+<ul>
+<li>Host อาจมีทั้ง template และ items เดี่ยวๆ ผสมกัน</li>
+</ul>
+</li>
+<li>
+<p>list of linux keys <a href="https://www.zabbix.com/documentation/current/en/manual/config/items/itemtypes/zabbix_agent">linux items keys</a></p>
+</li>
+<li>
+<p>create item screen</p>
+<p><img loading="lazy" src="/knowledge/assets/image_1707716027972_0.png" alt="image.png"  />
+</p>
+</li>
+<li>
+<p>in case create active agent item behind proxy, need to:</p>
+<ul>
+<li>
+<p>reload cache on proxy</p>
+<ul>
+<li>reload config <code>zabbix_proxy  -R config_cache_reload</code></li>
+</ul>
+</li>
+<li>
+<p>restart agent to retrive new item keys.</p>
+</li>
+<li></li>
+</ul>
+</li>
+</ul>
+<h2 id="zabbix-agent-learningzabbix">Zabbix-Agent #Learning/Zabbix<a hidden class="anchor" aria-hidden="true" href="#zabbix-agent-learningzabbix">#</a></h2>
+<ul>
+<li>
+<h3 id="step">step<a hidden class="anchor" aria-hidden="true" href="#step">#</a></h3>
+<ul>
+<li>
+<p>install os</p>
+</li>
+<li>
+<p>search zabbix package install</p>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="passive-vs-active">passive vs active<a hidden class="anchor" aria-hidden="true" href="#passive-vs-active">#</a></h3>
+</li>
+<li>
+<h3 id="auto-add">auto-add<a hidden class="anchor" aria-hidden="true" href="#auto-add">#</a></h3>
+<ul>
+<li>
+<p>by create alert-&gt;action</p>
+<ul>
+<li>do 3 thing -&gt; add host/ add hostgroup /  add template</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="installing-zabbix-proxy-learningzabbix">Installing Zabbix-Proxy #Learning/Zabbix<a hidden class="anchor" aria-hidden="true" href="#installing-zabbix-proxy-learningzabbix">#</a></h2>
+<ul>
+<li>
+<p>screen: add hosts behind proxy</p>
+<p><img loading="lazy" src="/knowledge/assets/image_1707706679184_0.png" alt="image.png"  />
+</p>
+<ul>
+<li>
+<p>reload config <code>zabbix_proxy  -R config_cache_reload</code>
++</p>
+<ul>
+<li></li>
+</ul>
+</li>
+</ul>
+</li>
+<li></li>
+</ul>
+
+
+  </div>
      
  
  
@@ -167,7 +274,7 @@ gtag('js', new Date());
     </main>
     
 <footer class="footer">
-    <span>&copy; 2024 <a href="http://localhost:1313/">Hlex</a></span>
+    <span>&copy; 2024 <a href="http://localhost:1313/knowledge/">Hlex</a></span>
     <br>
     <span>
         Powered by

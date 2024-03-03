@@ -7,15 +7,23 @@
 <meta name="robots" content="noindex, nofollow">
 <title>Learning/zabbix | Hlex</title>
 <meta name="keywords" content="" />
-<meta name="description" content="Zabbix Learning Map 🗺️ #Learning/Zabbix11 key Think everything you want to do for monitoring in terms of Host Groups, User Groups and Templates. component server
-agent
+<meta name="description" content="Zabbix Learning Map 🗺️ #Learning/Zabbix resource https://bestmonitoringtools.com/zabbix-tutorial-for-beginners-a-step-by-step-guide/
+https://www.amazon.com/Zabbix-Infrastructure-Monitoring-Cookbook-maintaining/dp/180324691X
+https://www.youtube.com/@DmitryLambert/featured
+https://trueidc.udemy.com/course/zabbix-monitoring/learn/lecture/20198908#overview
+key Think everything you want to do for monitoring in terms of Host Groups, User Groups and Templates. concept server
+agent / active agent
 proxy
 web
-monitor network how-to-monitor-cisco-switch-or-router-with-zabbix/ to-lean install Installing the Zabbix Server — https://tecadmin.net/install-zabbix-on-ubuntu/ Installing Zabbix Agents -https://tecadmin.net/install-zabbix-agent-on-ubuntu-and-debian Adding Host in Zabbix Server to Monitor — https://tecadmin.net/add-host-zabbix-server-monitor hostgroup #LearningPaths, #staging, #live, #database, #mongodb, #appserver, #search. template -&gt; hostgroup user os,mongodb,elasticsearch
-example
-https://github.com/omni-lchen/zabbix-mongodb
-https://github.com/zarplata/zabbix-agent-extension-elasticsearch
-debuging check port server telnet ip-of-your-agent 10050">
+cli-util ( sabbix-send )
+install install server
+overview step ( video on 2,3,4 here)
+search &lsquo;zabbix download&rsquo;
+run install as describe
+install db apt install mysql-server
+add mysql user zabbix
+install schema
+start zabbix-server">
 <meta name="author" content="Hlex">
 <link rel="canonical" href="http://localhost:1313/knowledge/pages/learning/zabbix/" />
 <link crossorigin="anonymous" href="/knowledge/assets/css/stylesheet.min.49b1c3611e5e823e974d0b9b3e1101617fce26c004757161abb1a1e4af3ff85c.css" integrity="sha256-SbHDYR5egj6XTQubPhEBYX/OJsAEdXFhq7Gh5K8/&#43;Fw=" rel="preload stylesheet" as="style">
@@ -28,7 +36,7 @@ debuging check port server telnet ip-of-your-agent 10050">
 <link rel="mask-icon" href="http://localhost:1313/knowledge/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<meta name="generator" content="Hugo 0.123.6">
+<meta name="generator" content="Hugo 0.123.7">
 <link rel="alternate" hreflang="en" href="http://localhost:1313/knowledge/pages/learning/zabbix/" />
 <noscript>
     <style>
@@ -154,13 +162,30 @@ gtag('js', new Date());
     <h1 class="post-title">
       Learning/zabbix
     </h1>
-    <div class="post-meta">&lt;span title=&#39;2024-02-18 00:00:00 &#43;0000 UTC&#39;&gt;February 18, 2024&lt;/span&gt;&amp;nbsp;·&amp;nbsp;1 min&amp;nbsp;·&amp;nbsp;Hlex
+    <div class="post-meta">&lt;span title=&#39;2024-02-18 00:00:00 &#43;0000 UTC&#39;&gt;February 18, 2024&lt;/span&gt;&amp;nbsp;·&amp;nbsp;2 min&amp;nbsp;·&amp;nbsp;Hlex
 
 </div>
   </header> 
-  <div class="post-content"><h2 id="zabbix-learning-map-imagepngknowledgeassetsimage_1709276775562_0png--learningzabbix11">Zabbix Learning Map <img loading="lazy" src="/knowledge/assets/image_1709276775562_0.png" alt="image.png"  />
- 🗺️ #Learning/Zabbix11</h2>
+  <div class="post-content"><h2 id="zabbix-learning-map-imagepngknowledgeassetsimage_1709276775562_0png--learningzabbix">Zabbix Learning Map <img loading="lazy" src="/knowledge/assets/image_1709276775562_0.png" alt="image.png"  />
+ 🗺️ #Learning/Zabbix</h2>
 <ul>
+<li>
+<h3 id="resource">resource<a hidden class="anchor" aria-hidden="true" href="#resource">#</a></h3>
+<ul>
+<li>
+<p><a href="https://bestmonitoringtools.com/zabbix-tutorial-for-beginners-a-step-by-step-guide/">https://bestmonitoringtools.com/zabbix-tutorial-for-beginners-a-step-by-step-guide/</a></p>
+</li>
+<li>
+<p><a href="https://www.amazon.com/Zabbix-Infrastructure-Monitoring-Cookbook-maintaining/dp/180324691X">https://www.amazon.com/Zabbix-Infrastructure-Monitoring-Cookbook-maintaining/dp/180324691X</a></p>
+</li>
+<li>
+<p><a href="https://www.youtube.com/@DmitryLambert/featured">https://www.youtube.com/@DmitryLambert/featured</a></p>
+</li>
+<li>
+<p><a href="https://trueidc.udemy.com/course/zabbix-monitoring/learn/lecture/20198908#overview">https://trueidc.udemy.com/course/zabbix-monitoring/learn/lecture/20198908#overview</a></p>
+</li>
+</ul>
+</li>
 <li>
 <h3 id="key">key<a hidden class="anchor" aria-hidden="true" href="#key">#</a></h3>
 <ul>
@@ -168,7 +193,7 @@ gtag('js', new Date());
 </ul>
 </li>
 <li>
-<h3 id="component">component<a hidden class="anchor" aria-hidden="true" href="#component">#</a></h3>
+<h3 id="concept">concept<a hidden class="anchor" aria-hidden="true" href="#concept">#</a></h3>
 <p><img loading="lazy" src="https://blog.zabbix.com/wp-content/uploads/2022/01/diagram.png" alt="Securing Zabbix 6.0 LTS by Kārlis Saliņš / Zabbix Summit Online 2021 | Noise"  />
 </p>
 <ul>
@@ -176,7 +201,7 @@ gtag('js', new Date());
 <p>server</p>
 </li>
 <li>
-<p>agent</p>
+<p>agent / active agent</p>
 </li>
 <li>
 <p>proxy</p>
@@ -184,23 +209,131 @@ gtag('js', new Date());
 <li>
 <p>web</p>
 </li>
+<li>
+<p>cli-util ( sabbix-send )</p>
+</li>
 </ul>
 </li>
-<li>
-<h3 id="monitor">monitor<a hidden class="anchor" aria-hidden="true" href="#monitor">#</a></h3>
-<ul>
-<li>network <a href="https://bestmonitoringtools.com/how-to-monitor-cisco-switch-or-router-with-zabbix/">how-to-monitor-cisco-switch-or-router-with-zabbix/</a></li>
-</ul>
-</li>
-<li>
-<h3 id="to-lean">to-lean<a hidden class="anchor" aria-hidden="true" href="#to-lean">#</a></h3>
-<ul>
 <li>
 <h4 id="install">install<a hidden class="anchor" aria-hidden="true" href="#install">#</a></h4>
 <ul>
-<li>Installing the Zabbix Server — <a href="https://tecadmin.net/install-zabbix-on-ubuntu/">https://tecadmin.net/install-zabbix-on-ubuntu/</a>
-Installing Zabbix Agents -https://tecadmin.net/install-zabbix-agent-on-ubuntu-and-debian
-Adding Host in Zabbix Server to Monitor — <a href="https://tecadmin.net/add-host-zabbix-server-monitor">https://tecadmin.net/add-host-zabbix-server-monitor</a></li>
+<li>
+<p>install server</p>
+<ul>
+<li>
+<p>overview step ( video on 2,3,4  <a href="https://trueidc.udemy.com/course/zabbix-monitoring/learn/lecture/20198932#overview">here</a>)</p>
+<ul>
+<li>
+<p>search &lsquo;zabbix download&rsquo;</p>
+</li>
+<li>
+<p>run install as describe</p>
+</li>
+<li>
+<p>install db <code>apt install mysql-server</code></p>
+</li>
+<li>
+<p><a href="https://sbcode.net/zabbix/create-initial-database/">add mysql user zabbix</a></p>
+</li>
+<li>
+<p>install schema</p>
+</li>
+<li>
+<p>start zabbix-server</p>
+</li>
+</ul>
+</li>
+<li>
+<p>apache+mysql</p>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo apt-get update
+</span></span><span style="display:flex;"><span>sudo apt-get install apache2 libapache2-mod-php
+</span></span><span style="display:flex;"><span>sudo apt-get install mysql-server
+</span></span><span style="display:flex;"><span>sudo apt-get install php php-mbstring php-gd php-xml php-bcmath php-ldap php-mysql libapache2-mod-php
+</span></span></code></pre></div><ul>
+<li>
+<p>ref — <a href="https://tecadmin.net/install-zabbix-on-ubuntu/">https://tecadmin.net/install-zabbix-on-ubuntu/</a></p>
+</li>
+<li>
+<p>change timezone</p>
+<ul>
+<li><code>sudo sed -i 's/;date.timezone =/date.timezone = &quot;Asia\/Bangkok&quot;/' /etc/php/*/apache2/php.ini</code></li>
+</ul>
+</li>
+<li>
+<p>continue install</p>
+<ul>
+<li>
+<p>at <a href="https://www.zabbix.com/download?zabbix=6.4&amp;os_distribution=ubuntu&amp;os_version=22.04&amp;components=server_frontend_agent&amp;db=mysql&amp;ws=apache">zabbix download</a></p>
+</li>
+<li>
+<p>set password</p>
+<ul>
+<li><code>sudo sed -i 's/# DBPassword=/DBPassword=password/' /etc/zabbix/zabbix_server.conf</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>all-in-one ( u22 - web + server)</p>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#ae81ff">set -e</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># https://tecadmin.net/install-zabbix-on-ubuntu/</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">sudo apt-get update</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">sudo apt-get install apache2 libapache2-mod-php -y </span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">sudo apt-get install mysql-server -y</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">sudo apt-get install php php-mbstring php-gd php-xml php-bcmath php-ldap php-mysql libapache2-mod-php -y</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">sudo sed -i &#39;s/;date.timezone =/date.timezone = &#34;Asia\/Bangkok&#34;/&#39; /etc/php/*/apache2/php.ini</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#https://www.zabbix.com/download?zabbix=6.4&amp;os_distribution=ubuntu&amp;os_version=22.04&amp;components=server_frontend_agent&amp;db=mysql&amp;ws=apache</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">wget https://repo.zabbix.com/zabbix/6.4/ubuntu/pool/main/z/zabbix-release/zabbix-release_6.4-1+ubuntu22.04_all.deb</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">sudo dpkg -i zabbix-release_6.4-1+ubuntu22.04_all.deb</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">sudo apt update</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">sudo apt install zabbix-server-mysql zabbix-frontend-php zabbix-apache-conf zabbix-sql-scripts zabbix-agent -y</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#create user</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">sudo mysql -u root -ppassword   &lt;&lt;EOF</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">create database zabbix character set utf8mb4 collate utf8mb4_bin;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">create user zabbix@localhost identified by &#39;password&#39;;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">grant all privileges on zabbix.* to zabbix@localhost;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">set global log_bin_trust_function_creators = 1;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">FLUSH PRIVILEGES;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">quit;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">EOF</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">zcat /usr/share/zabbix-sql-scripts/mysql/server.sql.gz | mysql --default-character-set=utf8mb4 -uzabbix -ppassword zabbix</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#end sql</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">mysql -u root -ppassword   &lt;&lt;EOF</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">set global log_bin_trust_function_creators = 0;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">EOF</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">sudo sed -i &#39;s/# DBPassword=/DBPassword=password/&#39; /etc/zabbix/zabbix_server.conf</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">systemctl restart zabbix-server zabbix-agent apache2</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">systemctl enable zabbix-server zabbix-agent apache2</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">curl http://localhost/zabbix/</span>
+</span></span></code></pre></div></li>
+<li>
+<p>Installing Zabbix Agents - <a href="https://tecadmin.net/install-zabbix-agent-on-ubuntu-and-debian">https://tecadmin.net/install-zabbix-agent-on-ubuntu-and-debian</a></p>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e">#https://www.zabbix.com/download?zabbix=6.4&amp;os_distribution=ubuntu&amp;os_version=22.04&amp;components=server_frontend_agent&amp;db=mysql&amp;ws=apache</span>
+</span></span><span style="display:flex;"><span>wget https://repo.zabbix.com/zabbix/6.4/ubuntu/pool/main/z/zabbix-release/zabbix-release_6.4-1+ubuntu22.04_all.deb
+</span></span><span style="display:flex;"><span>sudo dpkg -i zabbix-release_6.4-1+ubuntu22.04_all.deb
+</span></span><span style="display:flex;"><span>sudo apt update
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>sudo apt-get install zabbix-agent
+</span></span><span style="display:flex;"><span>sudo sed -i <span style="color:#e6db74">&#39;s/Server=127.0.0.1/Server=10.10.68.1/&#39;</span> /etc/zabbix/zabbix_agentd.conf
+</span></span><span style="display:flex;"><span>sudo sed -i <span style="color:#e6db74">&#39;s/Hostname=Zabbix server/Hostname=68-2/&#39;</span> /etc/zabbix/zabbix_agentd.conf
+</span></span><span style="display:flex;"><span>sudo systemctl enable zabbix-agent 
+</span></span><span style="display:flex;"><span>sudo systemctl start zabbix-agent 
+</span></span></code></pre></div><ul>
+<li>Adding Host in Zabbix Server to Monitor — <a href="https://tecadmin.net/add-host-zabbix-server-monitor">https://tecadmin.net/add-host-zabbix-server-monitor</a></li>
 </ul>
 </li>
 <li>
@@ -229,34 +362,11 @@ Adding Host in Zabbix Server to Monitor — <a href="https://tecadmin.net/add-ho
 </ul>
 </li>
 <li>
-<h4 id="debuging">debuging<a hidden class="anchor" aria-hidden="true" href="#debuging">#</a></h4>
+<h4 id="sabbix-send">sabbix send<a hidden class="anchor" aria-hidden="true" href="#sabbix-send">#</a></h4>
 <ul>
 <li>
-<h5 id="check-port">check port<a hidden class="anchor" aria-hidden="true" href="#check-port">#</a></h5>
+<p>Or use using zabbix-send  : Item type <code>trapper</code></p>
 <ul>
-<li>
-<p>server <code>telnet ip-of-your-agent 10050</code></p>
-</li>
-<li>
-<p>agent</p>
-</li>
-</ul>
-<pre tabindex="0"><code>apt install zabbix-get
-zabbix_get -s ip-of-your-agent -k agent.ping  
-zabbix_get -s ip-of-your-agent -k agent.version  
-zabbix_get -s ip-of-your-agent -k agent.hostname
-</code></pre></li>
-</ul>
-</li>
-<li>
-<h4 id="active-agent">active agent<a hidden class="anchor" aria-hidden="true" href="#active-agent">#</a></h4>
-<ul>
-<li>
-<p>using zabbix-send  : Item type <code>trapper</code></p>
-<ul>
-<li>
-<p>server-&gt; agent  <code>telnet ip-of-your-server 10050</code></p>
-</li>
 <li>
 <p>send to server</p>
 <ul>
@@ -265,22 +375,40 @@ zabbix_get -s ip-of-your-agent -k agent.hostname
 </li>
 <li>
 <p><code>zabbix_sender -vv -z [serverIp] -p 10051 -s [clientName] -k traptest -o &quot;Test value&quot;</code></p>
-</li>
+<p><img loading="lazy" src="/knowledge/assets/image_1709368312975_0.png" alt="image.png"  />
+</p>
+<ul>
+<li></li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
 </li>
-<li>
-<h4 id="report">report<a hidden class="anchor" aria-hidden="true" href="#report">#</a></h4>
+</ul>
+</li>
+</ul>
+<pre><code>      + 
+</code></pre>
 <ul>
 <li>
-<p>screens</p>
+<h4 id="ping-agent">ping agent<a hidden class="anchor" aria-hidden="true" href="#ping-agent">#</a></h4>
 <ul>
-<li>. In Zabbix, a &ldquo;screen&rdquo; is a user-defined layout that can display multiple data elements, such as graphs, maps, plain text values, etc., on a single page. This feature allows users to create a customized dashboard</li>
-</ul>
+<li>
+<p>check port</p>
+<ul>
+<li>
+<p>server <code>telnet ip-of-your-agent 10050</code></p>
 </li>
+<li>
+<p>agent</p>
+</li>
+</ul>
+<pre tabindex="0"><code>sudo apt install zabbix-get
+zabbix_get -s ip-of-your-agent -k agent.ping  
+zabbix_get -s ip-of-your-agent -k agent.version  
+zabbix_get -s ip-of-your-agent -k agent.hostname
+</code></pre></li>
 </ul>
 </li>
 <li>
@@ -308,11 +436,12 @@ zabbix_get -s ip-of-your-agent -k agent.hostname
 </li>
 </ul>
 </li>
-</ul>
-</li>
 <li>
 <h3 id="link">link<a hidden class="anchor" aria-hidden="true" href="#link">#</a></h3>
 <ul>
+<li>
+<p>network <a href="https://bestmonitoringtools.com/how-to-monitor-cisco-switch-or-router-with-zabbix/">how-to-monitor-cisco-switch-or-router-with-zabbix/</a></p>
+</li>
 <li>
 <p><a href="https://medium.com/@gokulnk/understanding-zabbix-f2a83eeb1221">overview (gen this map)</a></p>
 </li>
