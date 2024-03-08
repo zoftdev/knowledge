@@ -2,8 +2,8 @@
 title: Sharing/zabbix
 tags:
 categories:
-date: 2024-03-04
-lastMod: 2024-03-04
+date: 2024-03-07
+lastMod: 2024-03-07
 ---
 ## Zabbix Learning Map ![image.png](/knowledge/assets/image_1709276775562_0.png) 🗺️ #Learning/Zabbix
 
@@ -45,9 +45,11 @@ lastMod: 2024-03-04
 
       + #### hostgroup
 
+
         + ``#LearningPaths, #staging, #live, #database, #mongodb, #appserver, #search.``
 
       + #### template -> hostgroup user
+
 
         + os,mongodb,elasticsearch
 

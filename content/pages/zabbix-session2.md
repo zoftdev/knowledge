@@ -2,12 +2,13 @@
 title: zabbix-session2
 tags:
 categories:
-date: 2024-03-03
-lastMod: 2024-03-03
+date: 2024-03-07
+lastMod: 2024-03-07
 ---
 
 
 ## Create trigger & alert #Learning/zabbix
+
 
   + use items and function to create problem trigger.
 
@@ -20,6 +21,7 @@ lastMod: 2024-03-03
   + alert  [macro](https://www.zabbix.com/documentation/current/en/manual/appendix/macros/supported_by_location)
 
 ## Zabbix Items #Learning/zabbix
+
 
   + ### summary
 
@@ -36,14 +38,14 @@ lastMod: 2024-03-03
 
     + reload cache on proxy
 
-      + reload config ``zabbix_proxy  -R config_cache_reload``
-
+      + ((65c98937-2869-4e2c-8bd4-3b36bbd3ec1e))
 
     + restart agent to retrive new item keys.
 
     + 
 
 ## Zabbix-Agent #Learning/Zabbix
+
 
   + ### step
 
@@ -53,7 +55,9 @@ lastMod: 2024-03-03
 
   + ### passive vs active
 
+
   + ### auto-add
+
 
     + by create alert->action
 
@@ -61,12 +65,14 @@ lastMod: 2024-03-03
 
 ## Installing Zabbix-Proxy #Learning/Zabbix
 
+
   + screen: add hosts behind proxy
 
 
     ![image.png](/knowledge/assets/image_1707706679184_0.png)
 
     + reload config ``zabbix_proxy  -R config_cache_reload``
+
       + 
 
       + 
