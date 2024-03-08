@@ -11,7 +11,7 @@ link https://lab.cfiq.io/en/appsvc/introduction
 
 cloudflare: https://dash.cloudflare.com/
 
-account tidc.techguy@gmail.com / notEntry2
+account tidc.techguys@gmail.com / notEntry2
 
 Note:  https://miro.com/app/board/uXjVNjwn_tw=/
 
